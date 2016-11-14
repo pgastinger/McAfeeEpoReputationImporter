@@ -2,7 +2,7 @@
 
 *Import File Reputations for all files from a specified directory (simple tkinter gui)*
 
-This is a rather simple Python 3.5-tkinter-interface for reading all the files from a chosen directory, calculating MD5/SHA1-hashes for every file and sending them to the McAfee EPO server with a specified reputation value. Its main purpose is to whitelist all the files to build a golden image (for client/server installations).
+This is a rather simple localized (English and German) Python 3.5-tkinter-interface for reading all the files from a chosen directory, calculating MD5/SHA1-hashes for every file and sending them to the McAfee EPO server with a specified reputation value. Its main purpose is to whitelist all the files to build a golden image (for client/server installations).
 
 **I highly recommend using the latest Python 3.x version with a virtual environment. Just download the latest Python 3.x version from https://www.python.org/downloads/ (or use a portable version), create a virtual environment and install all the dependencies using pip.**
 
