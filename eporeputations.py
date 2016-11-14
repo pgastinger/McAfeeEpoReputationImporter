@@ -30,10 +30,15 @@ from tkinter import N, W, E, X, SUNKEN, DISABLED, NORMAL, INSERT, END, IntVar, F
 from tkinter import Tk, OptionMenu, StringVar, messagebox, Button, Label, Text, Checkbutton, Entry
 from tkinter.filedialog import askdirectory, asksaveasfile
 
-import mcafee_epo
+# load mcafee_epo, check if requests module available
+try:
+    import mcafee_epo
+except ImportError as exception:
+    messagebox.showerror("Error", "Could not load module mcafee_epo: %s" % exception)
+    sys.exit()
 
 # REVISION
-REVISION = "2016-11-11 14:00:00"
+REVISION = "2016-11-14 12:00:00"
 
 # config file
 CONFIGFILE = 'epo.cfg'
@@ -316,3 +321,4 @@ ROOT = Tk()
 ROOT.resizable(width=False, height=False)
 McAfeeEpoGUI(ROOT)
 ROOT.mainloop()
+
