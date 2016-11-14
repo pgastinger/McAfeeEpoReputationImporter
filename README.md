@@ -38,8 +38,9 @@ default_reputation = 99
 ```
 
 Most of the options should be pretty straight forward. At the moment, there is a German translation available. The EPO URL and credentials (username, password) can be set to default values. Certificate verification (0 or 1) only works if the EPO server has a trusted certificate from a known CA. The requests module timeout is set to 5s and we send 10 hashes per request. If you have 1000 files, then there will be 100 requests with 10 entries sent to the EPO server. Each entry consists of the filename, a comment, a MD5-hash, a SHA1-hash and a reputation value. The default reputation value is 99 (="Known trusted"). Other values are (they are not translated):
+
 |          name         | value |
-| ----------------------| ------|
+| :-------------------: | :---: |
 | Known trusted         |  99   |
 | Most likely trusted   |  85   |
 | Might be trusted      |  70   |
