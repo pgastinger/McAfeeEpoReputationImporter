@@ -1,0 +1,220 @@
+# EPO translations
+# Copyright (C) 2016 Raiffeisen Informatik GmbH
+# Peter Gastinger <peter.gastinger@r-it.at>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-11-11 13:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: eporeputations.py:79
+msgid "Configuration options not found: %(details)s"
+msgstr ""
+
+#: eporeputations.py:82
+msgid "Unknown error reading config file values: %(details)s"
+msgstr ""
+
+#: eporeputations.py:86
+msgid "Might be trusted"
+msgstr ""
+
+#: eporeputations.py:86
+msgid "Most likely trusted"
+msgstr ""
+
+#: eporeputations.py:86 eporeputations.py:151
+msgid "Known trusted"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Might be malicious"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Most likely malicious"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Unknown"
+msgstr ""
+
+#: eporeputations.py:88
+msgid "Known malicious"
+msgstr ""
+
+#: eporeputations.py:91
+msgid "all"
+msgstr ""
+
+#: eporeputations.py:91
+msgid "dll"
+msgstr ""
+
+#: eporeputations.py:91
+msgid "exe +dll"
+msgstr ""
+
+#: eporeputations.py:91 eporeputations.py:159
+msgid "exe"
+msgstr ""
+
+#: eporeputations.py:127
+msgid "McAfee EPO Reputation GUI (Revision: %(revision)s)"
+msgstr ""
+
+#: eporeputations.py:133
+msgid "Open Directory"
+msgstr ""
+
+#: eporeputations.py:136
+msgid "Send Files to EPO"
+msgstr ""
+
+#: eporeputations.py:139
+msgid "Save as CSV"
+msgstr ""
+
+#: eporeputations.py:144
+msgid "Verify Server Cert"
+msgstr ""
+
+#: eporeputations.py:147
+msgid "Reputation:"
+msgstr ""
+
+#: eporeputations.py:155
+msgid "File-Types:"
+msgstr ""
+
+#: eporeputations.py:165
+msgid ""
+"McAfee EPO Reputation GUI \n"
+"\n"
+"for setting reputation values for all the files in a chosen directory\n"
+"\n"
+msgstr ""
+
+#: eporeputations.py:167
+msgid ""
+"Steps:\n"
+msgstr ""
+
+#: eporeputations.py:168
+msgid ""
+"1.) Open directory\n"
+msgstr ""
+
+#: eporeputations.py:169
+msgid ""
+"2.) Optional: change default values\n"
+msgstr ""
+
+#: eporeputations.py:170
+msgid ""
+"3.) Optional: send file hashes to EPO server\n"
+msgstr ""
+
+#: eporeputations.py:171
+msgid ""
+"4.) Optional: download hashes as csv file\n"
+"\n"
+"\n"
+msgstr ""
+
+#: eporeputations.py:172
+msgid ""
+"Current user: %(username)s\n"
+msgstr ""
+
+#: eporeputations.py:177
+msgid "Ready for loading files"
+msgstr ""
+
+#: eporeputations.py:179
+msgid "EPO-URL:"
+msgstr ""
+
+#: eporeputations.py:185
+msgid "EPO-Username:"
+msgstr ""
+
+#: eporeputations.py:191
+msgid "EPO-Password:"
+msgstr ""
+
+#: eporeputations.py:201
+msgid "Choose a directory"
+msgstr ""
+
+#: eporeputations.py:209
+msgid "No suitable files found"
+msgstr ""
+
+#: eporeputations.py:209 eporeputations.py:283
+msgid "File"
+msgstr ""
+
+#: eporeputations.py:213
+msgid ""
+"Number of files found: %(numberoffiles)s\n"
+"\n"
+msgstr ""
+
+#: eporeputations.py:225
+msgid "Directory"
+msgstr ""
+
+#: eporeputations.py:225
+msgid "Please pick a directory"
+msgstr ""
+
+#: eporeputations.py:252
+msgid "Sending hashes %(current)d of %(total)d"
+msgstr ""
+
+#: eporeputations.py:259
+msgid "Error sending hashes: %(error)s"
+msgstr ""
+
+#: eporeputations.py:259 eporeputations.py:265
+msgid "Error"
+msgstr ""
+
+#: eporeputations.py:261
+msgid "Hashes sent to EPO"
+msgstr ""
+
+#: eporeputations.py:263
+msgid "Hashes successfully sent to EPO"
+msgstr ""
+
+#: eporeputations.py:263
+msgid "Success"
+msgstr ""
+
+#: eporeputations.py:265
+msgid "Something went wrong"
+msgstr ""
+
+#: eporeputations.py:274
+msgid "CSV Files"
+msgstr ""
+
+#: eporeputations.py:276
+msgid ""
+"filename;comment;md5 hash;sha1 hash;reputation\n"
+msgstr ""
+
+#: eporeputations.py:283
+msgid "Please specify a filename"
+msgstr ""
+

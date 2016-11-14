@@ -1,0 +1,249 @@
+# EPO translations GERMAN
+# Copyright (C) 2016 Raiffeisen Informatik GmbH
+# Peter Gastinger <peter.gastinger@r-it.at>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-11-11 14:33+0100\n"
+"PO-Revision-Date: 2016-11-11 14:34+0100\n"
+"Last-Translator: Peter Gastinger <peter.gastinger@r-it.at>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: eporeputations.py:79
+msgid "Configuration options not found: %(details)s"
+msgstr "Wert in der Konfigurationsdatei nicht gefunden: %(details)s"
+
+#: eporeputations.py:82
+msgid "Unknown error reading config file values: %(details)s"
+msgstr "Unbekannter Fehler beim Lesen der Konfiguration: %(details)s"
+
+#: eporeputations.py:86
+msgid "Might be trusted"
+msgstr ""
+
+#: eporeputations.py:86
+msgid "Most likely trusted"
+msgstr ""
+
+#: eporeputations.py:86 eporeputations.py:151
+msgid "Known trusted"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Might be malicious"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Most likely malicious"
+msgstr ""
+
+#: eporeputations.py:87
+msgid "Unknown"
+msgstr ""
+
+#: eporeputations.py:88
+msgid "Known malicious"
+msgstr ""
+
+#: eporeputations.py:91
+msgid "all"
+msgstr "alle"
+
+#: eporeputations.py:91
+msgid "dll"
+msgstr ".dll"
+
+#: eporeputations.py:91
+msgid "exe +dll"
+msgstr ".exe, .dll"
+
+#: eporeputations.py:91 eporeputations.py:159
+msgid "exe"
+msgstr ".exe"
+
+#: eporeputations.py:127
+msgid "McAfee EPO Reputation GUI (Revision: %(revision)s)"
+msgstr "McAfee EPO Reputation GUI (Revision: %(revision)s)"
+
+#: eporeputations.py:133
+msgid "Open Directory"
+msgstr "Verzeichnis öffnen"
+
+#: eporeputations.py:136
+msgid "Send Files to EPO"
+msgstr "Schicke Datei-Hashes zum EPO"
+
+#: eporeputations.py:139
+msgid "Save as CSV"
+msgstr "Speichern als CSV"
+
+#: eporeputations.py:144
+msgid "Verify Server Cert"
+msgstr "Server Zertifikat verifizieren"
+
+#: eporeputations.py:147
+msgid "Reputation:"
+msgstr "Reputation:"
+
+#: eporeputations.py:155
+msgid "File-Types:"
+msgstr "Datei-Typen:"
+
+#: eporeputations.py:165
+msgid ""
+"McAfee EPO Reputation GUI \n"
+"\n"
+"for setting reputation values for all the files in a chosen directory\n"
+"\n"
+msgstr ""
+"McAfee EPO Reputation GUI\n"
+"\n"
+"zum Setzen eines Reputations-Wertes für alle Dateien in einem ausgewählten \n"
+"Verzeichnis\n"
+"\n"
+
+#: eporeputations.py:167
+msgid "Steps:\n"
+msgstr "Vorgehensweise:\n"
+
+#: eporeputations.py:168
+msgid "1.) Open directory\n"
+msgstr "1.) Verzeichnis auswählen\n"
+
+#: eporeputations.py:169
+msgid "2.) Optional: change default values\n"
+msgstr "2.) Optional: Default-Werte ändern\n"
+
+#: eporeputations.py:170
+msgid "3.) Optional: send file hashes to EPO server\n"
+msgstr "3.) Optional: Datei-Hashes zum EPO-Server schicken\n"
+
+#: eporeputations.py:171
+msgid ""
+"4.) Optional: download hashes as csv file\n"
+"\n"
+"\n"
+msgstr ""
+"4.) Optional: Datei-Hashes als CSV-Datei herunterladen\n"
+"\n"
+"\n"
+
+#: eporeputations.py:172
+msgid "Current user: %(username)s\n"
+msgstr "Angemeldeter Benutzer: %(username)s\n"
+
+#: eporeputations.py:177
+msgid "Ready for loading files"
+msgstr "Bereit zum Laden der Dateien"
+
+#: eporeputations.py:179
+msgid "EPO-URL:"
+msgstr "EPO-URL:"
+
+#: eporeputations.py:185
+msgid "EPO-Username:"
+msgstr "EPO-Benutzername:"
+
+#: eporeputations.py:191
+msgid "EPO-Password:"
+msgstr "EPO-Passwort:"
+
+#: eporeputations.py:201
+msgid "Choose a directory"
+msgstr "Verzeichnis auswählen"
+
+#: eporeputations.py:209
+msgid "No suitable files found"
+msgstr "Keine geeigneten Dateien gefunden"
+
+#: eporeputations.py:209 eporeputations.py:288
+msgid "File"
+msgstr "Datei"
+
+#: eporeputations.py:213
+msgid ""
+"Number of files found: %(numberoffiles)s\n"
+"\n"
+msgstr ""
+"Anzahl an gefundenen Dateien: %(numberoffiles)s\n"
+"\n"
+
+#: eporeputations.py:225
+msgid "Directory"
+msgstr "Verzeichnis"
+
+#: eporeputations.py:225
+msgid "Please pick a directory"
+msgstr "Bitte ein Verzeichnis auswählen"
+
+#: eporeputations.py:246
+msgid "EPO credentials missing"
+msgstr "EPO Zugangsdaten fehlen"
+
+#: eporeputations.py:246 eporeputations.py:264 eporeputations.py:270
+msgid "Error"
+msgstr "Fehler"
+
+#: eporeputations.py:257
+msgid "Sending hashes %(current)d of %(total)d"
+msgstr "Sende Hashes %(current)d von %(total)d"
+
+#: eporeputations.py:264
+msgid "Error sending hashes: %(error)s"
+msgstr "Fehler beim Senden der Datei-Hashes: %(error)s"
+
+#: eporeputations.py:266
+msgid "Hashes sent to EPO"
+msgstr "Hashes zum EPO gesendet"
+
+#: eporeputations.py:268
+msgid "Hashes successfully sent to EPO"
+msgstr "Datei-Hashes erfolgreich zum EPO-Server gesendet"
+
+#: eporeputations.py:268
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: eporeputations.py:270
+msgid "Something went wrong"
+msgstr "Irgendetwas ist leider fehlgeschlagen"
+
+#: eporeputations.py:279
+msgid "CSV Files"
+msgstr "CSV-Dateien"
+
+#: eporeputations.py:281
+msgid "filename;comment;md5 hash;sha1 hash;reputation\n"
+msgstr "Dateiname;Kommentar;MD5 Hash;SHA1 Hash;Reputation\n"
+
+#: eporeputations.py:288
+msgid "Please specify a filename"
+msgstr "Bitte einen Dateinamen angegeben"
+
+#~ msgid "Configuration options not found"
+#~ msgstr "Konfigurationseintrag nicht gefunden"
+
+#~ msgid "Current user : %(username)s\n"
+#~ msgstr "Angemeldeter Benutzer\t  : %(username)s\n"
+
+#~ msgid "EPO-URL      : %(url)s\n"
+#~ msgstr "EPO-URL\t\t\t: %(url)s\n"
+
+#~ msgid "EPO-User     : %(epousername)s\n"
+#~ msgstr "EPO-Benutzer\t\t\t: %(epousername)s\n"
+
+#~ msgid "McAfee EPO Reputation GUI (Built: %(builtdate)s)"
+#~ msgstr "McAfee EPO Reputation GUI (erstellt: %(builtdate)s)"
+
+#~ msgid "McAfee EPO Reputation GUI"
+#~ msgstr "McAfee EPO Reputation GUI"
