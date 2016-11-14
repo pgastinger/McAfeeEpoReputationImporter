@@ -4,7 +4,7 @@
 
 This is a rather simple localized (English and German) Python 3.5-tkinter-interface for reading all the files from a chosen directory, calculating MD5/SHA1-hashes for every file and sending them to the McAfee EPO server with a specified reputation value. Its main purpose is to whitelist all the files to build a golden image (for client/server installations).
 
-**I highly recommend using the latest Python 3.x version with a virtual environment. Just download the latest Python 3.x version from https://www.python.org/downloads/ (or use a portable version), create a virtual environment and install all the dependencies using pip.**
+**I highly recommend using the latest Python 3.x version with a virtual environment. Just download the latest Python 3.x version from https://www.python.org/downloads/ (or use a portable version), create a virtual environment and install dependencies using pip. Besides the requests module, everything else should be included by default in Python 3.x**
 
 ## Credits
 For building this interface (in addition to the standard Python documentation), I used a couple of documents:
@@ -44,7 +44,6 @@ Instead of the original library (issued by McAfee) I chose an alternative librar
   2. Change default values, add missing values
   3. Send file hashes to EPO server
   4. Download hashes as CSV file
-
 
 
 ### Screenshots

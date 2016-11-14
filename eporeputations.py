@@ -16,6 +16,8 @@ __version__ = "0.1"
 __maintainer__ = "Peter Gastinger"
 __email__ = "peter.gastinger@r-it.at"
 __status__ = "Development"
+
+# load oder modules
 import base64
 import datetime
 import getpass
@@ -29,6 +31,13 @@ import configparser
 from tkinter import N, W, E, X, SUNKEN, DISABLED, NORMAL, INSERT, END, IntVar, Frame
 from tkinter import Tk, OptionMenu, StringVar, messagebox, Button, Label, Text, Checkbutton, Entry
 from tkinter.filedialog import askdirectory, asksaveasfile
+
+# tested with Python 3.5.2
+try:
+    assert sys.version_info >= (3, 5)
+except Exception:
+    messagebox.showerror("Error", "You need at least Python 3.5 to run this program")
+    sys.exit()
 
 # load mcafee_epo, check if requests module available
 try:
@@ -133,7 +142,10 @@ class McAfeeEpoGUI(object):
                 'revision': REVISION})
 
         self.hashlistdict = list()
-        self.localuser = getpass.getuser()
+        try:
+            self.localuser = getpass.getuser()
+        except:
+            self.localuser = "UNKNOWN"
 
         self.opendir_button = Button(master, text=_("Open Directory"), command=self.open_directory)
         self.opendir_button.grid(row=0, column=0, sticky=N + W + E)
