@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['eporeputations.py'],
-             pathex=['C:\\Python35-32\\Tie'],
+             pathex=[''],
              binaries=None,
              datas=[("epo.cfg","."), ("locale","locale")],
              hiddenimports=[],
