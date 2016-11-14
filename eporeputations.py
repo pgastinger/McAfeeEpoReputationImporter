@@ -86,6 +86,7 @@ try:
     USERNAME = CONFIG.get("EPO", "username")
     PASSWORD = CONFIG.get("EPO", "password")
     URL = CONFIG.get("EPO", "url")
+    VERIFY_CERTIFICATE = CONFIG.get("EPO", "verify_certificate")
     TIMEOUT = int(CONFIG.get("EPO", "requests_timeout"))
     HASHESPERREQUEST = int(CONFIG.get("EPO", "hashes_per_request"))
     DEFAULTREPUTATION = CONFIG.get("EPO", "default_reputation")
@@ -157,7 +158,7 @@ class McAfeeEpoGUI(object):
         self.save_button.grid(row=2, column=0, sticky=N + W + E)
 
         self.check_ssl_val = IntVar(master)
-        self.check_ssl_val.set(0)
+        self.check_ssl_val.set(VERIFY_CERTIFICATE)
         self.check_ssl = Checkbutton(master, text=_("Verify Server Cert"), variable=self.check_ssl_val)
         self.check_ssl.grid(row=10, column=0, sticky=W)
 

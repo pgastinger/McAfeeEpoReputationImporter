@@ -31,10 +31,22 @@ default_language = en
 username = webapi
 password =
 url =
+verify_certificate = 1
 requests_timeout = 5
 hashes_per_request = 10
 default_reputation = 99
 ```
+
+Most of the options should be pretty straight forward. At the moment, there is a German translation available. The EPO URL and credentials (username, password) can be set to default values. Certificate verification (0 or 1) only works if the EPO server has a trusted certificate from a known CA. The requests module timeout is set to 5s and we send 10 hashes per request. If you have 1000 files, then there will be 100 requests with 10 entries sent to the EPO server. Each entry consists of the filename, a comment, a MD5-hash, a SHA1-hash and a reputation value. The default reputation value is 99 (="Known trusted"). Other values are (they are not translated):
+|          name         | value |
+| ----------------------| ------|
+| Known trusted         |  99   |
+| Most likely trusted   |  85   |
+| Might be trusted      |  70   |
+| Unknown               |  50   |
+| Might be malicious    |  30   |
+| Most likely malicious |  15   |
+| Known malicious       |   0   |
 
 ### Brief explanations
 
@@ -51,7 +63,7 @@ This is the main GUI (with a simple tkinter grid layout):
 
 ![gui](https://cloud.githubusercontent.com/assets/3997488/20257671/669da942-aa4b-11e6-9c37-7f307ebd1189.png)
 
-The script uses the getpass-module to add the user currently logged in user as a comment. This is important, because usually the API user is a shared user and to blame a specific user for adding file reputations, we have to have a username somewhere. 
+The script uses the getpass-module to add the user currently logged in user as a comment. This is important, because usually the API user is a shared user and to blame a specific user for adding file reputations, we have to have a username somewhere.
 ![repogui](https://cloud.githubusercontent.com/assets/3997488/20259627/33c23c12-aa56-11e6-9037-ce402a99a2b9.png)
 
 
@@ -80,5 +92,6 @@ C:\py352\Scripts\pyinstaller eporeputations.spec
 After clicking on this .exe-file, everything will be extracted to a temporary directory and executed without dependencies.
 
 ## Enhancements
-There are many things which can be improved and there might be some bugs (I probably have not catched all possible errors). As stated above, this is just a simple interface which does the job for me. 
+There are many things which can be improved and there might be some bugs (I probably have not catched all possible errors). As stated above, this is just a simple interface which does the job for me.
+
 
